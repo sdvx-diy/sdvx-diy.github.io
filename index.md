@@ -1,3 +1,5 @@
+# !!!! This Guide is a Work-In-Progress and is Subject to Further Change !!!!
+
 # Table of Contents  
 
 * [About SDVX](#about-sdvx)
@@ -26,19 +28,19 @@ If you have access to computerized equipment such as a laser cutter, you will be
 #### Recessed Button Build:
  * Laser Cutter or CNC Mill
  * Soldering Iron
- * Spade Crimping Tool
+ * Spade Crimping Tool (or pliers)
 
 #### Non-Recessed Button Building
  * Table Saw
  * Drill Press
  * Soldering Iron
- * Spade Crimping Tool
+ * Spade Crimping Tool (or pliers)
 
 # Parts List
 
 For most builds, I would recommend using Chinese clones over official Sanwa parts due to the steep cost of Sanwa parts. The parts which affect gameplay performance the most are the limit switches and the optical rotary encoders.
 
-Some parts in the parts list can be substituted with other parts depending on your preferences. Please read the [limit switch weighting](####choosing-your-limit-switch-weight) section to determine which limit switch weighting is right for you.
+Some parts in the parts list can be substituted with other parts depending on your preferences. Please read the [limit switch weighting](#choosing-your-limit-switch-weight) section to determine which limit switch weighting is right for you.
 
 #### Full Sized Controller ($140 w/Clones):  
 
@@ -58,34 +60,31 @@ Some parts in the parts list can be substituted with other parts depending on yo
 
 #### Full Sized Controller (Sanwa):
 
-* 4x [60mm Square Sanwa Buttons]()
-* 2x [45mm IIDX Sanwa Buttons]()
-* 1x [33mm Square Sanwa Buttons]()
-* 7x [Lamp Holder]()
-* 7x [LED Holder]()
-* 1x [Arduino Micro/Leonardo]()
+* 4x [60mm Square Sanwa Buttons]
+* 2x [45mm IIDX Sanwa Buttons]
+* 1x [33mm Square Sanwa Buttons]* 7x [Lamp Holder]
+* 7x [LED Holder]
+* 1x [Arduino Micro/Leonardo]
 * $10.00 4x [100g Basic Limit Switches](https://www.mouser.com/ProductDetail/Omron-Electronics/D3V-6-1C24-K-6?qs=sGAEpiMZZMumBvQ1hY%2ffBTSaeneFcwBtDuZRREEUu%252bI%3d)
 * $6.00 3x [50g Basic Limit Switches](https://www.mouser.com/ProductDetail/Omron-Electronics/D3V-01-3C23-K?qs=%2fha2pyFadujjWXGU5Rf3WcnMSR61eELcAh360%2f3s2kY%3d)
-* 1x [100pc Spade Connector (Optional)]()
-* 2x [Optical Rotary Encoders]()
-* 2x [6mm D-Shaft Aluminum Knobs]()
-* 1x [48"x24"x1/4" Medium Density Fiberboard]()
-* 1x [18"x12"x1/4" Clear Acrylic (Optional)]()
-* 1x [Micro USB B 2.0 Cable (May be included with Arduino)]()
+* 1x [100pc Spade Connector (Optional)]
+* 2x [Optical Rotary Encoders]
+* 2x [6mm D-Shaft Aluminum Knobs]
+* 1x [48"x24"x1/4" Medium Density Fiberboard]
+* 1x [18"x12"x1/4" Clear Acrylic (Optional)]
+* 1x [Micro USB B 2.0 Cable (May be included with Arduino)]
 
 #### Possible Part Substitutions:
- * 2x [PEC16 Mechanical Encoder (Replace Optical Encoder)]()
- * 4x [0.1uF Capacitors (Required for Mechanical Encoder)]()
- * 7x [25g Basic Limit Switch (Use if Keeping Button Return Spring)]()
-
-# Electrical Assembly
+ * 2x [PEC16 Mechanical Encoder (Replace Optical Encoder)]
+ * 4x [0.1uF Capacitors (Required for Mechanical Encoder)]
+ * 7x [25g Basic Limit Switch (Use if Keeping Button Return Spring)]
 
 #### Choosing Your Limit Switch Weight
-Arcade buttons will usually ships as a preassembled unit. There are two main configurations which you can setup your arcade buttons as. This guide by default opts to remove the return spring from the button and rely solely on the return force of the limit switch to reset the button. This option provides a light, consistent actuation force and a tactile, clean break when the switch is triggered. The other option is to keep the return spring and use a very lightly weighted limit switch. This configuration relies on the return spring to reset the button and provides a heavy, consistent actuation force even after the switch is triggered.
+Arcade buttons will usually ship as a preassembled unit. There are two main configurations which you can setup your arcade buttons as. This guide by default opts to remove the return spring from the button and rely solely on the return force of the limit switch to reset the button. This option provides a light, consistent actuation performance and a tactile, clean break when the switch is triggered. The other option is to keep the return spring and use a very lightly weighted limit switch. This configuration relies on the return spring to reset the button and provides a heavy, consistent actuation force even after the switch is triggered.
 
 The limit switches which typically come with the arcade buttons have an actuation force of 150g to 200g. It may be worthwhile buying the switches after you receive your buttons and test the buttons with and without the return spring with the default switches.
 
-#### Button Weighting
+#### Custom Button Weighting
 This chart displays the weight of the individual parts of the button which the switch must act against and the minimum force buffer that you must maintain for correct operation. The actuation force is roughly the summation of the return spring and the actuation force of the limit switch. The minimum actuation force required is a suggestion however choosing a lower actuation force will result in buttons which return slowly creating a sluggish feel.
 
 Actual Sound Voltex Booths do not have a universal weighting for the buttons and often vary between arcades.
@@ -96,4 +95,17 @@ Actual Sound Voltex Booths do not have a universal weighting for the buttons and
 | 45mm Rectangle| 7g            | 150g          | 180g          | 50g           |
 | 33mm Square   | 3g            | 150g          | 170g          | 50g           |
 
-*AF: Actuation Force
+AF*: Actuation Force  
+
+# Electrical Assembly
+#### Arcade Button Return Spring Removal
+#### Switch & LED Lamp Wiring
+#### Rotary Encoder Wiring
+#### Arduino Wiring
+
+# Programming
+#### Installation
+#### Downloading the Code
+
+# Box Assembly
+####
