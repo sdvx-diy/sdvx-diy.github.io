@@ -91,8 +91,8 @@ Actual Sound Voltex Booths do not have a universal weighting for the buttons and
 
 | Button Size | Plunger Weight | AF* w/Spring | AF* w/Spring & 25g Switch | Minimum AF* Required |
 |:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
-| 60mm Square   | 22g           | 260g          | 300g          | 100g          |
-| 45mm Rectangle| 7g            | 150g          | 180g          | 50g           |
+| 60mm Square   | 22g           | 290g          | 330g          | 100g          |
+| 45mm Rectangle| 7g            | 150g          | 180g          | 75g           |
 | 33mm Square   | 3g            | 150g          | 170g          | 50g           |
 
 AF*: Actuation Force  
@@ -108,4 +108,3 @@ AF*: Actuation Force
 #### Downloading the Code
 
 # Box Assembly
-####
