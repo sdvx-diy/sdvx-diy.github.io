@@ -1,4 +1,5 @@
-# !!!! This Guide is a Work-In-Progress and is Subject to Further Change !!!!
+# This Guide is a Work-In-Progress
+#### Last Updated: 4/24/2018
 
 # Table of Contents  
 
@@ -29,12 +30,14 @@ If you have access to computerized equipment such as a laser cutter, you will be
  * Laser Cutter or CNC Mill
  * Soldering Iron
  * Spade Crimping Tool (or pliers)
+ * Wire Cutter
 
 #### Non-Recessed Button Building
  * Table Saw
  * Drill Press
  * Soldering Iron
  * Spade Crimping Tool (or pliers)
+ * Wire Cutter
 
 # Parts List
 
@@ -80,14 +83,14 @@ Some parts in the parts list can be substituted with other parts depending on yo
  * 7x [25g Basic Limit Switch (Use if Keeping Button Return Spring)]
 
 #### Choosing Your Limit Switch Weight
-Arcade buttons will usually ship as a preassembled unit. There are two main configurations which you can setup your arcade buttons as. This guide by default opts to remove the return spring from the button and rely solely on the return force of the limit switch to reset the button. This option provides a light, consistent actuation performance and a tactile, clean break when the switch is triggered. The other option is to keep the return spring and use a very lightly weighted limit switch. This configuration relies on the return spring to reset the button and provides a heavy, consistent actuation force even after the switch is triggered.
+Arcade buttons will usually ship as a preassembled unit. There are two main configurations which you can setup your arcade buttons as. This guide by default opts to remove the return spring from the button and rely solely on the return force of the limit switch to reset the button. This option provides a light actuation force and a tactile, clean break when the switch is triggered. The other option is to retain the return spring and use a very lightly weighted limit switch. This configuration relies on the return spring to reset the button and provides a heavy, consistent actuation force even after the switch is triggered.
 
-The limit switches which typically come with the arcade buttons have an actuation force of 150g to 200g. It may be worthwhile buying the switches after you receive your buttons and test the buttons with and without the return spring with the default switches.
+The limit switches which typically come with the arcade buttons have an actuation force of 150g to 200g. If you are planning to remove the return spring, you should test the button without the return spring and with the switches that came with the button before you buy aftermarket switches to replace it. Depending on your preferences, the default switches may suffice.
 
 #### Custom Button Weighting
 This chart displays the weight of the individual parts of the button which the switch must act against and the minimum force buffer that you must maintain for correct operation. The actuation force is roughly the summation of the return spring and the actuation force of the limit switch. The minimum actuation force required is a suggestion however choosing a lower actuation force will result in buttons which return slowly creating a sluggish feel.
 
-Actual Sound Voltex Booths do not have a universal weighting for the buttons and often vary between arcades.
+Official Sound Voltex Arcade machines do not have a universal weighting for the buttons and often vary between arcades.
 
 | Button Size | Plunger Weight | AF* w/Spring | AF* w/Spring & 25g Switch | Minimum AF* Required |
 |:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
