@@ -1,5 +1,5 @@
-# This Guide is a Work-In-Progress
-#### Last Updated: 4/24/2018
+# A DIY SDVX/K-Shoot Mania Controller (Work-In-Progress)
+#### Last Updated: 5/8/2018
 
 # Table of Contents  
 
@@ -83,7 +83,7 @@ Some parts in the parts list can be substituted with other parts depending on yo
  * 7x [25g Basic Limit Switch (Use if Keeping Button Return Spring)]
 
 #### Choosing Your Limit Switch Weight
-Arcade buttons will usually ship as a preassembled unit. There are two main configurations which you can setup your arcade buttons as. This guide by default opts to remove the return spring from the button and rely solely on the return force of the limit switch to reset the button. This option provides a light actuation force and a tactile, clean break when the switch is triggered. The other option is to retain the return spring and use a very lightly weighted limit switch. This configuration relies on the return spring to reset the button and provides a heavy, consistent actuation force even after the switch is triggered.
+Arcade buttons will usually ship as a preassembled unit. There are two main configurations which you can setup your arcade buttons as. This guide by default opts to remove the return spring from the button and rely solely on the return force of the limit switch to reset the button. This option provides a light actuation force and a tactile, clean break when the switch is triggered. The other option is to retain the return spring and use a very lightly weighted limit switch. This configuration relies on the return spring to reset the button and provides a heavy, consistent actuation force even after the switch is triggered. Button weighting with the return spring can be reduced by cutting the main return spring.
 
 The limit switches which typically come with the arcade buttons have an actuation force of 150g to 200g. If you are planning to remove the return spring, you should test the button without the return spring and with the switches that came with the button before you buy aftermarket switches to replace it. Depending on your preferences, the default switches may suffice.
 
@@ -92,7 +92,7 @@ This chart displays the weight of the individual parts of the button which the s
 
 Official Sound Voltex Arcade machines do not have a universal weighting for the buttons and often vary between arcades.
 
-| Button Size | Plunger Weight | AF* w/Spring | AF* w/Spring & 25g Switch | Minimum AF* Required |
+| Button Size | Plunger Weight | AF* w/Spring | AF* w/Spring & 25g Switch | Minimum Switch AF* Required |
 |:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
 | 60mm Square   | 22g           | 290g          | 330g          | 100g          |
 | 45mm Rectangle| 7g            | 150g          | 180g          | 75g           |
@@ -103,6 +103,7 @@ AF*: Actuation Force
 # Electrical Assembly
 #### Arcade Button Return Spring Removal
 #### Switch & LED Lamp Wiring
+Arcade buttons usually ship with a lamp holder, LED fixture and LED. The LED will either be white or the same color as the button plunger. Most of the LED fixtures and LED's will have a resistor in the fixture which allows the LED to be 12V compliant. As such, the LED's can be driven directly off 12V or 5V without any additional resistor to limit the current.
 #### Rotary Encoder Wiring
 #### Arduino Wiring
 
