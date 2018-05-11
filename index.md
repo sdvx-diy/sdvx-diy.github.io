@@ -1,5 +1,5 @@
-# A DIY SDVX/K-Shoot Mania Controller (Work-In-Progress)
-#### Last Updated: 5/8/2018
+# A DIY SDVX/K-Shoot Mania Controller Guide (Work-In-Progress)
+#### Last Updated: 5/10/2018
 
 # Table of Contents  
 
@@ -103,7 +103,14 @@ AF*: Actuation Force
 # Electrical Assembly
 #### Arcade Button Return Spring Removal
 #### Switch & LED Lamp Wiring
-Arcade buttons usually ship with a lamp holder, LED fixture and LED. The LED will either be white or the same color as the button plunger. Most of the LED fixtures and LED's will have a resistor in the fixture which allows the LED to be 12V compliant. As such, the LED's can be driven directly off 12V or 5V without any additional resistor to limit the current.
+Arcade buttons usually ship with a lamp holder, LED fixture and LED. The LED will either be white or the same color as the button cap. Most of the LED fixtures and LEDs that ship with the arcade buttons will have a resistor soldered to the LED in the fixture. This allows the LED to be driven directly off 12V without a resistor. Since we will be driving the LED directly off the output pin of an Arduino, the LED will be dimmer than intended. The LEDs chosen for the guide are a flat topped variety which offers the best illumination pattern within the square button and can be driven directly off the 5V output pin without an external resistor.
+
+<p align="center">
+  <img src="img/LED_Lamp.jpg" width="75%">
+  <br/>
+  Assembled LED & Holder (left) & Disassembled (right)
+</p>
+
 #### Rotary Encoder Wiring
 #### Arduino Wiring
 
