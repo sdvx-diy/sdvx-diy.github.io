@@ -1,5 +1,5 @@
 # A DIY SDVX/K-Shoot Mania Controller Guide (Work-In-Progress)
-#### Last Updated: 5/14/2018
+#### Last Updated: 5/15/2018
 
 # Table of Contents  
 
@@ -83,9 +83,13 @@ Some parts in the parts list can be substituted with other parts depending on yo
  * 7x [25g Basic Limit Switch (Use if Keeping Button Return Spring)]
 
 #### Choosing Your Limit Switch Weight
-Arcade buttons will usually ship as a preassembled unit. There are two main configurations which you can setup your arcade buttons as. This guide by default opts to remove the return spring from the button and rely solely on the return force of the limit switch to reset the button. This option provides a light actuation force and a tactile, clean break when the switch is triggered. The other option is to retain the return spring and use a very lightly weighted limit switch. This configuration relies on the return spring to reset the button and provides a heavy, consistent actuation force even after the switch is triggered. Button weighting with the return spring can be reduced by replacing the spring with a lower weighted spring.
+Arcade buttons will usually ship as a preassembled unit containing the arcade button, limit switch, LED lamp holder, LED fixture and LED. These arcade buttons typically come with really heavy return springs (100g - 150g) and heavy limit switches (100g - 200g). Using both of the default parts will probably be too heavy to play difficult songs with and I would recommend using either of the three following configurations.
 
-The limit switches which typically come with the arcade buttons have an actuation force of 150g to 200g. If you are planning to remove the return spring, you should test the button without the return spring and with the switches that came with the button before you buy aftermarket switches to replace it. Depending on your preferences, the default switches may suffice.
+The first recommended configuration is to completely remove the heavy return spring and to use a medium weighted limit switch. This configuration offers a light actuation force and tactile feedback upon actuation. This configuration only requires you to buy new limit switches which should be 100g - 150g for the 60mm buttons, 50g - 75g for the 45mm buttons and 50g for the 33mm buttons. You could try out this configuration with the default limit switches but these no-name Chinese switches often have a high snap-over value which causes the return force to be very weak. I recommend using Omron or Honeywell limit switches instead.
+
+The second configuration is to keep the heavy return spring and use a lightly weighted limit switch. This configuration offers a consistent actuation force throughout the button press but has a somewhat high overall actuation force. This configuration however will be more responsive button return than the previous configuration. Since very light limit switches are very hard to find and are often very fragile, the lightest reliable switch will probably be 25g Omrons.
+
+The third configuration is to replace the return spring with a lighter spring and limit switch. This configuration is a compromise between the previous two configurations offering the best traits of both which is a relatively light actuation force and a responsive feel to the button. This configuration is also the most expensive since you have to buy both return springs and limit switches. Return springs are hard to find and springs from Japan are often expensive with shipping.
 
 #### Custom Button Weighting
 This chart displays the weight of the individual parts of the button which the switch must act against and the minimum force buffer that you must maintain for correct operation. The actuation force is roughly the summation of the return spring and the actuation force of the limit switch. The minimum actuation force required is a suggestion however choosing a lower actuation force will result in buttons which return slowly creating a sluggish feel.
@@ -102,6 +106,8 @@ AF*: Actuation Force
 
 # Electrical Assembly
 #### Arcade Button Return Spring Removal
+
+
 #### Switch & LED Lamp Wiring
 Arcade buttons usually ship with a lamp holder, LED fixture and LED. The LED will either be white or the same color as the button cap. Most of the LED fixtures and LEDs that ship with the arcade buttons will have a resistor soldered to the LED in the fixture. This allows the LED to be driven directly off 12V without a resistor. Since we will be driving the LED directly off the output pin of an Arduino, the LED will be dimmer than intended. The LEDs chosen for the guide are a flat topped variety which offers the best illumination pattern within the square button and can be driven directly off the 5V output pin without an external resistor. The side of the lamp which has longer leads or more wire wrapped around the bottom post is the positive side of the LED.
 
