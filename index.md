@@ -128,6 +128,12 @@ To prevent the side panels from angling inward and preventing the top plate from
 ## Arcade Button Overview
 The arcade buttons consists of eight main parts, the housing, plunger, plate mount, fastener, LED lamp, lamp holder, return spring and limit switch. An layout of the different parts can be found below.
 
+<p align="center">
+  <img src="/img/Button_Breakdown.jpg" width="75%">
+  <br/>
+  Overview of Arcade Button Components
+</p>
+
 ## Arcade Button Return Spring Removal
 If you are using a button configuration where the return spring must be removed, you will need to disassemble the arcade button. To disassemble the button, remove the limit switch and LED lamp from the button. Twist the lamp holder counter-clockwise to unlock and pull to remove. To remove the plunger, squeeze both plunger tabs inward and push the plunger out. Once the plunger is removed, you can replace or remove the return spring.
 
@@ -135,7 +141,7 @@ If you are using a button configuration where the return spring must be removed,
 Arcade buttons usually ship with a lamp holder, LED fixture and LED. The LED will either be white or the same color as the button cap. Most of the LED fixtures and LEDs that ship with the arcade buttons will have a resistor soldered to the LED in the fixture. This allows the LED to be driven directly off 12V without a resistor. Since we will be driving the LED directly off the output pin of an Arduino, the LED will be dimmer than intended. The LEDs chosen for the guide are a flat topped variety which offers the best illumination pattern within the square button and can be driven directly off the 5V output pin without an external resistor. The side of the lamp which has longer leads or more wire wrapped around the bottom post is the positive side of the LED.
 
 <p align="center">
-  <img src="img/LED_Lamp.jpg" width="75%">
+  <img src="/img/LED_Lamp.jpg" width="75%">
   <br/>
   Assembled LED & Holder (left) & Disassembled (right)
 </p>
