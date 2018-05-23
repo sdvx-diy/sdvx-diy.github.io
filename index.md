@@ -115,6 +115,12 @@ If you have access to a laser cutter, I have created design files for two types 
 
 MDF was used as the main material for the standard design due to its strength, low cost and ease of painting. MDF however is a fairly dense wood and takes many passes with a laser cutter (8 passes in my case) and can be substituted for a different type of wood. Acrylic can also be substituted for MDF however, make sure you do not use polycarbonate as polycarbonate will create toxic gasses when laser cut.
 
+<p align="center">
+  <img src="/img/Standard_Box.jpg" width="75%">
+  <br/>
+  Standard Box Design
+</p>
+
 ### Painting
 Since the standard design uses wood, regular oil based paint can be used. If you are using some type of plastic such as acrylic or polycarbonate, you will need to use a non-oil based paint such as acrylic paint. If oil based paint is used on acrylic or polycarbonate, the paint will dissolve the plastic.
 ###### Caution: Acrylic paint often contains latex which can cause allergic reactions!!!
@@ -136,6 +142,12 @@ The arcade buttons consists of eight main parts, the housing, plunger, plate mou
 
 ## Arcade Button Return Spring Removal
 If you are using a button configuration where the return spring must be removed, you will need to disassemble the arcade button. To disassemble the button, remove the limit switch and LED lamp from the button. Twist the lamp holder counter-clockwise to unlock and pull to remove. To remove the plunger, squeeze both plunger tabs inward and push the plunger out. Once the plunger is removed, you can replace or remove the return spring.
+
+<p align="center">
+  <img src="/img/Spring_Removal.jpg" width="75%">
+  <br/>
+  Plunger Removal
+</p>
 
 ## Switch & LED Lamp Wiring
 Arcade buttons usually ship with a lamp holder, LED fixture and LED. The LED will either be white or the same color as the button cap. Most of the LED fixtures and LEDs that ship with the arcade buttons will have a resistor soldered to the LED in the fixture. This allows the LED to be driven directly off 12V without a resistor. Since we will be driving the LED directly off the output pin of an Arduino, the LED will be dimmer than intended. The LEDs chosen for the guide are a flat topped variety which offers the best illumination pattern within the square button and can be driven directly off the 5V output pin without an external resistor. The side of the lamp which has longer leads or more wire wrapped around the bottom post is the positive side of the LED.
@@ -163,6 +175,8 @@ One terminal on both the limit switch and the LED lamp holder will connect to gr
 Each of the soldered wires will need to be crimped. You should need a total of 14 spade connectors for the ground harness.
 
 ### Rotary Encoder Wiring
+The rotary encoder used in this guide is an optical type encoder which offers high resolution and a smooth rotation. Optical rotary encoders will usually come with four wires which are 5V, GND, D+ and D-.
+
 ### Arduino Wiring
 
 # Programming
