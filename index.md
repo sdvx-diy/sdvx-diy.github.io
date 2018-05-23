@@ -1,5 +1,5 @@
 # A DIY SDVX/K-Shoot Mania Controller Guide (Work-In-Progress)
-#### Last Updated: 5/21/2018
+#### Last Updated: 5/23/2018
 
 # Table of Contents  
 
@@ -130,6 +130,12 @@ Although the design was laser cut with finger joints, due to the variance of the
 
 To prevent the side panels from angling inward and preventing the top plate from fitting, place the top plate onto the box while the glue is curing. Make sure that there is no glue touching the top plate or you will have to either break the bond later or remake the side panels.
 
+<p align="center">
+  <img src="/img/Box_Gluing.jpg" width="75%">
+  <br/>
+  Top Plate Placed on Box to Set Alignment While Curing
+</p>
+
 # Electrical Assembly
 ## Arcade Button Overview
 The arcade buttons consists of eight main parts, the housing, plunger, plate mount, fastener, LED lamp, lamp holder, return spring and limit switch. An layout of the different parts can be found below.
@@ -161,9 +167,27 @@ Arcade buttons usually ship with a lamp holder, LED fixture and LED. The LED wil
 ### Create Limit Switch & LED Signal Wires
 For this section, you will need 14 45cm lengths of wire, 14 spade connectors, a wire cutter, wire stripper, crimping tool and soldering iron.
 
+<p align="center">
+  <img src="/img/Signal_Wires.jpg" width="75%">
+  <br/>
+  Signal Wires, Spade Connectors & Crimper
+</p>
+
 Using your wire stripper, strip off about 5mm of insulation off both ends of each wire. Once all of the wires are stripped, use your soldering iron and tin both ends of the wire. The ends should be coated in a light application of solder and the individual wire strands should not separate.
 
+<p align="center">
+  <img src="/img/Wire_Crimp.jpg" width="75%">
+  <br/>
+  Using Crimping Tool To Crimp Spade Connector
+</p>
+
 Once you've tinned both ends of the wire, use a crimping tool to attach one spade connector to each wire. There should only be one spade connector on each length of wire.
+
+<p align="center">
+  <img src="/img/Signal_Wires_Finished.jpg" width="75%">
+  <br/>
+  Finished Signal Wires
+</p>
 
 ### Create Ground Harness
 For the ground wire, we will create a single daisy chained wire (harness) to connect all of the grounds. This allows us to reduce the number of wires in the box by half.
