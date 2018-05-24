@@ -61,26 +61,26 @@ Some parts in the parts list can be substituted with other parts depending on yo
  * $20.00 1x [18"x12"x1/4" Clear Acrylic (Optional & Try to Source Locally)](https://www.ebay.com/itm/CLEAR-ACRYLIC-PLEXIGLASS-1-4-X-12-X-24-PLASTIC-SHEET/281826160483?hash=item419e25ef63:g:w0IAAOSw20JZgOdh)
  * $5.00 1x [Micro USB B 2.0 Cable (May be included with Arduino)](https://www.amazon.com/AmazonBasics-Male-Micro-Cable-Black/dp/B07232M876/)
 
-### Full Sized Controller (Sanwa):
+### Full Sized Controller ($277 w/Sanwa):
 
-* 4x [60mm Square Sanwa Buttons]
-* 2x [45mm IIDX Sanwa Buttons]
-* 1x [33mm Square Sanwa Buttons]* 7x [Lamp Holder]
-* 7x [LED Holder]
+* $80.00 4x [60mm Square Sanwa Buttons](https://global.rakuten.com/en/store/sanwadenshi/item/ilumb_075/?l-id=rgm_search_en_rvp_widget)
+* $30.00 2x [45mm IIDX Sanwa Buttons](https://global.rakuten.com/en/store/sanwadenshi/item/ilumb_102/)
+* $10.00 1x [33mm Square Sanwa Buttons](https://global.rakuten.com/en/store/sanwadenshi/item/ilumb_238/)
+* $56.00 7x [LED Holder](https://global.rakuten.com/en/store/sanwadenshi/item/ilumb_206/?l-id=rgm_search_en_rvp_widget)
 * $7.50 1x [Arduino Micro Breakout](https://www.ebay.com/itm/Screw-Terminal-Breakout-PCB-for-Raspberry-Pi-GPIOs-Arduino-Nano-Micro-more/142737397889?hash=item213bcfd881:m:mwdoB9ogbUTo15wtXr29XkQ)
 * $10.00 4x [100g Basic Limit Switches (Optional but Recommended)](https://www.mouser.com/ProductDetail/Omron-Electronics/D3V-6-1C24-K-6?qs=sGAEpiMZZMumBvQ1hY%2ffBTSaeneFcwBtDuZRREEUu%252bI%3d)
 * $6.00 3x [50g Basic Limit Switches (Optional but Recommended)](https://www.mouser.com/ProductDetail/Omron-Electronics/D3V-01-3C23-K?qs=%2fha2pyFadujjWXGU5Rf3WcnMSR61eELcAh360%2f3s2kY%3d)
 * $7.50 1x [100pc Spade Connector (Optional but Recommended)](https://www.ebay.com/itm/100Pcs-Fully-Insulated-Blue-Female-Electrical-Spade-Crimp-Connector-Terminal-New/182753468067?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2057872.m2749.l2649)
 * $20.00 2x [Optical Rotary Encoders](https://www.ebay.com/itm/Encoder-400P-R-Incremental-Rotary-Encoder-400p-r-AB-phase-encoder-6mm-Shaft/262600476946?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2057872.m2749.l2649)
 * $15.00 2x [6mm D-Shaft Aluminum Knobs](https://www.aliexpress.com/item/Diameter-38MM-Height-30-mm-Stalk-aluminum-knob-Volume-knob/32690174488.html)
-* 1x 48"x24"x1/4" Medium Density Fiberboard (Try to Source Locally)
+* $10.00 1x 48"x24"x1/4" Medium Density Fiberboard (Try to Source Locally)
 * $20.00 1x [18"x12"x1/4" Clear Acrylic (Optional & Try to Source Locally)](https://www.ebay.com/itm/CLEAR-ACRYLIC-PLEXIGLASS-1-4-X-12-X-24-PLASTIC-SHEET/281826160483?hash=item419e25ef63:g:w0IAAOSw20JZgOdh)
 * $5.00 1x [Micro USB B 2.0 Cable (May be included with Arduino)](https://www.amazon.com/AmazonBasics-Male-Micro-Cable-Black/dp/B07232M876/)
 
 ### Possible Part Substitutions:
- * 2x [PEC16 Mechanical Encoder (Replace Optical Encoder)]
- * 4x [0.1uF Capacitors (Required for Mechanical Encoder)]
- * 7x [25g Basic Limit Switch (Use if Keeping Button Return Spring)]
+ * $2.50 2x [PEC16 Mechanical Encoder (Replace Optical Encoder)](https://www.mouser.com/ProductDetail/Bourns/PEC16-4025F-N0024?qs=%2fha2pyFaduhNkJYeOIRdS%2fLyC8VdDi0RaBwN9WChr%2f8%3d)
+ * $5.00 4x [0.1uF Capacitors (Required for Mechanical Encoder)](https://www.mouser.com/ProductDetail/KEMET/C330C104J2H5TA91707301?qs=sGAEpiMZZMuMW9TJLBQkXpDxzuCsSowOGTUhbwptFNc%3d)
+ * $10.00 7x [25g Basic Limit Switch (Use if Keeping Button Return Spring)](https://www.mouser.com/ProductDetail/Omron-Electronics/D3V-01-1C22?qs=%2fha2pyFadujjWXGU5Rf3WXXdRP4IGeLSSHBPX6hbZr4%3d)
 
 ### Choosing Your Limit Switch Weight
 Arcade buttons will usually ship as a preassembled unit containing the arcade button, limit switch, LED lamp holder, LED fixture and LED. These arcade buttons typically come with really heavy return springs (100g - 150g) and heavy limit switches (100g - 200g). Using both of the default parts will probably be too heavy to play difficult songs with and I would recommend using either of the three following configurations.
