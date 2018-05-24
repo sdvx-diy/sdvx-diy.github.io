@@ -26,15 +26,7 @@ One of the biggest obstacles to actually building the controller is having acces
 
 If you have access to computerized equipment such as a laser cutter, you will be able to cut square holes and recess the buttons into the top plate of the controller. If you only have access to standard wood working tools, the buttons will have to sit on top of the top plate which only affects aesthetics and not performance.
 
-### Recessed Button Build:
  * Laser Cutter or CNC Mill
- * Soldering Iron
- * Spade Crimping Tool (or pliers)
- * Wire Cutter
-
-### Non-Recessed Button Building
- * Table Saw
- * Drill Press
  * Soldering Iron
  * Spade Crimping Tool (or pliers)
  * Wire Cutter
@@ -45,7 +37,7 @@ For most builds, I would recommend using Chinese clones over official Sanwa part
 
 Some parts in the parts list can be substituted with other parts depending on your preferences. Please read the [limit switch weighting](#choosing-your-limit-switch-weight) section to determine which limit switch weighting is right for you.
 
-### Full Sized Controller ($140 w/Clones):  
+### Controller w/Clone Buttons:  
 
  * $20.00 4x [60mm Square Arcade Buttons](https://www.aliexpress.com/item/high-quality-4pcs-lot-Square-60-60mm-Lighted-Buttons-Illuminated-Push-Button-with-Micro-switch-for/32611880107.html)
  * $8.00 2x [45mm Rectangular Arcade Buttons](https://www.ebay.com/itm/Long-Rectangle-LED-Illuminated-Push-Button-For-Arcade-Video-Machines-50-33mm-Lot/263040766497?_trkparms=aid%3D111001%26algo%3DREC.SEED%26ao%3D1%26asc%3D20131017132637%26meid%3D00125b674abb4125b46ee52f972cf060%26pid%3D100033%26rk%3D8%26rkt%3D8%26sd%3D292485342918%26itm%3D263040766497&_trksid=p2045573.c100033.m2042)
@@ -61,7 +53,7 @@ Some parts in the parts list can be substituted with other parts depending on yo
  * $20.00 1x [18"x12"x1/4" Clear Acrylic (Optional & Try to Source Locally)](https://www.ebay.com/itm/CLEAR-ACRYLIC-PLEXIGLASS-1-4-X-12-X-24-PLASTIC-SHEET/281826160483?hash=item419e25ef63:g:w0IAAOSw20JZgOdh)
  * $5.00 1x [Micro USB B 2.0 Cable (May be included with Arduino)](https://www.amazon.com/AmazonBasics-Male-Micro-Cable-Black/dp/B07232M876/)
 
-### Full Sized Controller ($277 w/Sanwa):
+### Controller w/Sanwa Buttons:
 
 * $80.00 4x [60mm Square Sanwa Buttons](https://global.rakuten.com/en/store/sanwadenshi/item/ilumb_075/?l-id=rgm_search_en_rvp_widget)
 * $30.00 2x [45mm IIDX Sanwa Buttons](https://global.rakuten.com/en/store/sanwadenshi/item/ilumb_102/)
@@ -199,7 +191,9 @@ One terminal on both the limit switch and the LED lamp holder will connect to gr
 Each of the soldered wires will need to be crimped. You should need a total of 14 spade connectors for the ground harness.
 
 ### Rotary Encoder Wiring
-The rotary encoder used in this guide is an optical type encoder which offers high resolution and a smooth rotation. Optical rotary encoders will usually come with four wires which are 5V, GND, D+ and D-.
+The rotary encoder used in this guide is an optical type encoder which offers high resolution and a smooth rotation. Optical rotary encoders will usually come with four wires which are 5V, GND, D+ and D-. Since the Arduino Micro only has one 5V pin and two ground pins, you will have to solder the 5V and ground wires of the two rotary encoders together. The D+ and D- are the signal wires which send pulses to the Arduino Micro. After connecting the wires to the Arduino Micro, if the direction of encoders are reversed, switch the D+ and D- wires.
+
+If you are using mechanical encoders, then the outer two pins are D+ and D- and the center pin is ground. Mechanical encoders are not active devices and do not require 5V supply. Similarly to the optical encoders, if the direction is reversed, you can swap the data pins to reverse the direction.
 
 ### Arduino Wiring
 
