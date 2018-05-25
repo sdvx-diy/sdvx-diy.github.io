@@ -1,5 +1,5 @@
 # A DIY SDVX/K-Shoot Mania Controller Guide (Work-In-Progress)
-#### Last Updated: 5/23/2018
+#### Last Updated: 5/24/2018
 
 # Table of Contents  
 
@@ -7,12 +7,18 @@
 * [Controller Options](#controller-options)
 * [Equipment List](#equipment-list)
 * [Parts List](#parts-list)
+* [Limit Switches](#limit-switches)
+* [Box Assembly](#box-assembly)
 * [Electrical Assembly](#electrical-assembly)
+
+<hr/>
 
 # About SDVX  
 Sound Voltex is a rhythm game that originated in Japan. It mixes the standard top down four column layout of other rhythm games along with two additional columns which overlap on columns 1/2 and columns 3/4. It also incorporates two effects sliders which cross the playing field. Sound Voltex arcade machines are playable in Japan and in the United States through Round1. A PC application available for most countries as [Sound Voltex III e-AMUSEMENT CLOUD](https://p.eagate.573.jp/game/eacsdvx/iii/p/common/top.html).  
 
 K-Shoot Mania is the main alternative to SDVX and is free to play and supports a wide variety of  input control schemes. The K-Shoot Mania Project can be found [here]().
+
+<hr/>
 
 # Controller Options  
 Before you decide to build your own controller, it may be worthwhile comparing existing options. Building your controller is a rewarding experience but will often cost as much or more than commercial controllers, especially if you don't already have access to the necessary tools.
@@ -20,6 +26,8 @@ Before you decide to build your own controller, it may be worthwhile comparing e
  * [Gamo2 SVSE5](https://www.gamo2.com/en/index.php?dispatch=products.view&product_id=314)
  * [Gamo2 SVRE9](https://www.gamo2.com/en/index.php?dispatch=products.view&product_id=313)
  * [Pocket Voltex](https://mon.im/sdvx/)
+
+<hr/>
 
 # Equipment List
 One of the biggest obstacles to actually building the controller is having access to the necessary equipment. If you don't have access to the equipment at home or at a university, check to see if there's a hacker space nearby which might have the equipment you need.
@@ -31,13 +39,15 @@ If you have access to computerized equipment such as a laser cutter, you will be
  * Spade Crimping Tool (or pliers)
  * Wire Cutter
 
+<hr/>
+
 # Parts List
 
 For most builds, I would recommend using Chinese clones over official Sanwa parts due to the steep cost of Sanwa parts. The parts which affect gameplay performance the most are the limit switches and the optical rotary encoders.
 
 Some parts in the parts list can be substituted with other parts depending on your preferences. Please read the [limit switch weighting](#choosing-your-limit-switch-weight) section to determine which limit switch weighting is right for you.
 
-### Controller w/Clone Buttons:  
+### Controller w/Clone Buttons ($140):  
 
  * $20.00 4x [60mm Square Arcade Buttons](https://www.aliexpress.com/item/high-quality-4pcs-lot-Square-60-60mm-Lighted-Buttons-Illuminated-Push-Button-with-Micro-switch-for/32611880107.html)
  * $8.00 2x [45mm Rectangular Arcade Buttons](https://www.ebay.com/itm/Long-Rectangle-LED-Illuminated-Push-Button-For-Arcade-Video-Machines-50-33mm-Lot/263040766497?_trkparms=aid%3D111001%26algo%3DREC.SEED%26ao%3D1%26asc%3D20131017132637%26meid%3D00125b674abb4125b46ee52f972cf060%26pid%3D100033%26rk%3D8%26rkt%3D8%26sd%3D292485342918%26itm%3D263040766497&_trksid=p2045573.c100033.m2042)
@@ -53,7 +63,7 @@ Some parts in the parts list can be substituted with other parts depending on yo
  * $20.00 1x [18"x12"x1/4" Clear Acrylic (Optional & Try to Source Locally)](https://www.ebay.com/itm/CLEAR-ACRYLIC-PLEXIGLASS-1-4-X-12-X-24-PLASTIC-SHEET/281826160483?hash=item419e25ef63:g:w0IAAOSw20JZgOdh)
  * $5.00 1x [Micro USB B 2.0 Cable (May be included with Arduino)](https://www.amazon.com/AmazonBasics-Male-Micro-Cable-Black/dp/B07232M876/)
 
-### Controller w/Sanwa Buttons:
+### Controller w/Sanwa Buttons ($277):
 
 * $80.00 4x [60mm Square Sanwa Buttons](https://global.rakuten.com/en/store/sanwadenshi/item/ilumb_075/?l-id=rgm_search_en_rvp_widget)
 * $30.00 2x [45mm IIDX Sanwa Buttons](https://global.rakuten.com/en/store/sanwadenshi/item/ilumb_102/)
@@ -74,6 +84,9 @@ Some parts in the parts list can be substituted with other parts depending on yo
  * $5.00 4x [0.1uF Capacitors (Required for Mechanical Encoder)](https://www.mouser.com/ProductDetail/KEMET/C330C104J2H5TA91707301?qs=sGAEpiMZZMuMW9TJLBQkXpDxzuCsSowOGTUhbwptFNc%3d)
  * $10.00 7x [25g Basic Limit Switch (Use if Keeping Button Return Spring)](https://www.mouser.com/ProductDetail/Omron-Electronics/D3V-01-1C22?qs=%2fha2pyFadujjWXGU5Rf3WXXdRP4IGeLSSHBPX6hbZr4%3d)
 
+<hr/>
+
+# Limit Switches
 ### Choosing Your Limit Switch Weight
 Arcade buttons will usually ship as a preassembled unit containing the arcade button, limit switch, LED lamp holder, LED fixture and LED. These arcade buttons typically come with really heavy return springs (100g - 150g) and heavy limit switches (100g - 200g). Using both of the default parts will probably be too heavy to play difficult songs with and I would recommend using either of the three following configurations.
 
@@ -95,6 +108,8 @@ Official Sound Voltex Arcade machines do not have a universal weighting for the 
 | 33mm Square   | 3g            | 150g          | 170g          | 50g           |
 
 AF*: Actuation Force  
+
+<hr/>
 
 # Box Assembly
 ### Design
@@ -127,6 +142,8 @@ To prevent the side panels from angling inward and preventing the top plate from
   <br/>
   Top Plate Placed on Box to Set Alignment While Curing
 </p>
+
+<hr/>
 
 # Electrical Assembly
 ## Arcade Button Overview
@@ -193,10 +210,20 @@ Each of the soldered wires will need to be crimped. You should need a total of 1
 ### Rotary Encoder Wiring
 The rotary encoder used in this guide is an optical type encoder which offers high resolution and a smooth rotation. Optical rotary encoders will usually come with four wires which are 5V, GND, D+ and D-. Since the Arduino Micro only has one 5V pin and two ground pins, you will have to solder the 5V and ground wires of the two rotary encoders together. The D+ and D- are the signal wires which send pulses to the Arduino Micro. After connecting the wires to the Arduino Micro, if the direction of encoders are reversed, switch the D+ and D- wires.
 
-If you are using mechanical encoders, then the outer two pins are D+ and D- and the center pin is ground. Mechanical encoders are not active devices and do not require 5V supply. Similarly to the optical encoders, if the direction is reversed, you can swap the data pins to reverse the direction.
+If you are using mechanical encoders, then the outer two pins are D+ and D- and the center pin is ground. Mechanical encoders are not active devices and do not require 5V supply. Similarly to the optical encoders, if the direction is reversed, you can swap the data pins to reverse the direction. Mechanical encoders however do suffer from switch bounce which will affect the signals being sent to the Arduino. To mitigate this, wire a 0.1uF capacitor between the D+/D- and ground.
 
 ### Arduino Wiring
+
+<hr/>
 
 # Programming
 ### Installation
 ### Downloading the Code
+
+<hr/>
+
+# Troubleshooting
+
+<hr/>
+
+# Contact Me
