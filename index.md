@@ -237,26 +237,20 @@ In this guide, we used an Arduino Micro with a breakout board instead of the mor
 
 As of writing, the wiring for the buttons should be plugged into the following ports on the Arduino Micro's breakout board.
 
-| Signal Wire      | Arduino Port |
-| ---------------- | :----------: |
-| Left Encoder D+  | TX (0)       |
-| Left Encoder D-  | RX (1)       |
-| Right Encoder D+ | 2            |
-| Right Encoder D- | 3            |
-| BT-A Switch      | A2           |
-| BT-B Switch      | A3           |
-| BT-C Switch      | A4           |
-| BT-D Switch      | A5           |
-| FxL Switch       | A0           |
-| FxR Switch       | A1           |
-| Start Switch     | 7            |
-| BT-A LED         | 9            |
-| BT-B LED         | 10           |
-| BT-C LED         | 11           |
-| BT-D LED         | 12           |
-| FxL LED          | 5            |
-| FxR LED          | 6            |
-| Start LED        | 13           |
+| Button | Limit Switch Pin | LED Pin |
+| ------ | :--------------: | :-----: |
+| BT-A   | A2               | 9       |
+| BT-B   | A3               | 10      |
+| BT-C   | A4               | 11      |
+| BT-D   | A5               | 12      |
+| FxL    | A0               | 5       |
+| FxR    | A1               | 6       |
+| Start  | 7                | 13      |
+
+| Encoder | D+ Pin | D- Pin |
+| ------- | :----: | :----: |
+| Left    | TX (0) | RX (1) |
+| Right   | 2      | 3      |
 
 These pin assignments can be adapted to the Arduino Leonardo or any other Keyboard & Mouse library compatible boards. Make sure encoder pins are assigned to interrupt pins if a different board is used.
 
