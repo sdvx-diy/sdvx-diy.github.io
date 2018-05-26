@@ -19,7 +19,7 @@
 # About SDVX  
 Sound Voltex is a rhythm game that originated in Japan. It mixes the standard top down four column layout of other rhythm games along with two additional columns which overlap on columns 1/2 and columns 3/4. It also incorporates two effects sliders which cross the playing field. Sound Voltex arcade machines are playable in Japan and in the United States through Round1. A PC application available for most countries as [Sound Voltex III e-AMUSEMENT CLOUD](https://p.eagate.573.jp/game/eacsdvx/iii/p/common/top.html).  
 
-K-Shoot Mania is the main alternative to SDVX and is free to play and supports a wide variety of  input control schemes. The K-Shoot Mania Project can be found [here]().
+K-Shoot Mania is the main alternative to SDVX and is free to play and supports a wide variety of  input control schemes. The K-Shoot Mania Project can be found [here](http://www.kshootmania.com/).
 
 <hr/>
 
