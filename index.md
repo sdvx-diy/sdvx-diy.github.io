@@ -1,5 +1,5 @@
 # A DIY SDVX/K-Shoot Mania Controller Guide (Work-In-Progress)
-#### Last Updated: 5/24/2018
+#### Last Updated: 5/25/2018
 
 # Table of Contents  
 
@@ -10,6 +10,9 @@
 * [Limit Switches](#limit-switches)
 * [Box Assembly](#box-assembly)
 * [Electrical Assembly](#electrical-assembly)
+* [Programming](#programming)
+* [Troubleshooting](#troubleshooting)
+* [Contact Me](#contact-me)
 
 <hr/>
 
@@ -203,9 +206,20 @@ For the ground wire, we will create a single daisy chained wire (harness) to con
 
 To reduce the length of excess wire, we will measure the length of wire by measuring the space between the buttons. Unlike the signal wires, two wires will have to be soldered together first before the spade connector can be crimped.
 
-One terminal on both the limit switch and the LED lamp holder will connect to ground. The normally closed (NC) pin and the terminal of the LED lamp holder with less plastic.
+<p align="center">
+  <img src="/img/Harness_Soldering.jpg" width="75%">
+  <br/>
+  Soldering Ground Harness Wires
+</p>
 
+One terminal on both the limit switch and the LED lamp holder will connect to ground. The normally opened (NO) pin and the terminal of the LED lamp holder with less plastic.
 Each of the soldered wires will need to be crimped. You should need a total of 14 spade connectors for the ground harness.
+
+<p align="center">
+  <img src="/img/Wired_Harness.jpg" width="75%">
+  <br/>
+  Ground Harness Wired onto Buttons
+</p>
 
 ### Rotary Encoder Wiring
 The rotary encoder used in this guide is an optical type encoder which offers high resolution and a smooth rotation. Optical rotary encoders will usually come with four wires which are 5V, GND, D+ and D-. Since the Arduino Micro only has one 5V pin and two ground pins, you will have to solder the 5V and ground wires of the two rotary encoders together. The D+ and D- are the signal wires which send pulses to the Arduino Micro. After connecting the wires to the Arduino Micro, if the direction of encoders are reversed, switch the D+ and D- wires.
@@ -213,6 +227,38 @@ The rotary encoder used in this guide is an optical type encoder which offers hi
 If you are using mechanical encoders, then the outer two pins are D+ and D- and the center pin is ground. Mechanical encoders are not active devices and do not require 5V supply. Similarly to the optical encoders, if the direction is reversed, you can swap the data pins to reverse the direction. Mechanical encoders however do suffer from switch bounce which will affect the signals being sent to the Arduino. To mitigate this, wire a 0.1uF capacitor between the D+/D- and ground.
 
 ### Arduino Wiring
+In this guide, we used an Arduino Micro with a breakout board instead of the more traditional Arduino Leonardo. While this route is slightly more expensive, the screw terminals on the breakout board are a more permanent solution than plugging wires into a pin header.
+
+<p align="center">
+  <img src="/img/Button_Pins.jpg" width="75%">
+  <br/>
+  Limit Switch and LED Pins
+</p>
+
+As of writing, the wiring for the buttons should be plugged into the following ports on the Arduino Micro's breakout board.
+
+| Signal Wire      | Arduino Port |
+| ---------------- | :----------: |
+| Left Encoder D+  | TX (0)       |
+| Left Encoder D-  | RX (1)       |
+| Right Encoder D+ | 2            |
+| Right Encoder D- | 3            |
+| BT-A Switch      | A2           |
+| BT-B Switch      | A3           |
+| BT-C Switch      | A4           |
+| BT-D Switch      | A5           |
+| FxL Switch       | A0           |
+| FxR Switch       | A1           |
+| Start Switch     | 7            |
+| BT-A LED         | 9            |
+| BT-B LED         | 10           |
+| BT-C LED         | 11           |
+| BT-D LED         | 12           |
+| FxL LED          | 5            |
+| FxR LED          | 6            |
+| Start LED        | 13           |
+
+These pin assignments can be adapted to the Arduino Leonardo or any other Keyboard & Mouse library compatible boards. Make sure encoder pins are assigned to interrupt pins if a different board is used.
 
 <hr/>
 
