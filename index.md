@@ -1,5 +1,5 @@
 # A DIY SDVX/K-Shoot Mania Controller Guide (Work-In-Progress)
-#### Last Updated: 5/25/2018
+#### Last Updated: 5/26/2018
 
 # Table of Contents  
 
@@ -223,6 +223,12 @@ Each of the soldered wires will need to be crimped. You should need a total of 1
 
 ### Rotary Encoder Wiring
 The rotary encoder used in this guide is an optical type encoder which offers high resolution and a smooth rotation. Optical rotary encoders will usually come with four wires which are 5V, GND, D+ and D-. Since the Arduino Micro only has one 5V pin and two ground pins, you will have to solder the 5V and ground wires of the two rotary encoders together. The D+ and D- are the signal wires which send pulses to the Arduino Micro. After connecting the wires to the Arduino Micro, if the direction of encoders are reversed, switch the D+ and D- wires.
+
+<p align="center">
+  <img src="/img/Encoder_Pins.jpg" width="75%">
+  <br/>
+  Encoder Pinout
+</p>
 
 If you are using mechanical encoders, then the outer two pins are D+ and D- and the center pin is ground. Mechanical encoders are not active devices and do not require 5V supply. Similarly to the optical encoders, if the direction is reversed, you can swap the data pins to reverse the direction. Mechanical encoders however do suffer from switch bounce which will affect the signals being sent to the Arduino. To mitigate this, wire a 0.1uF capacitor between the D+/D- and ground.
 
