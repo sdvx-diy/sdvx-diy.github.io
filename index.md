@@ -1,5 +1,5 @@
-# A DIY SDVX/K-Shoot Mania Controller Guide (Work-In-Progress)
-#### Last Updated: 5/26/2018
+# A DIY SDVX/K-Shoot Mania Controller Guide
+#### Last Updated: 6/1/2018
 
 # Table of Contents  
 
@@ -11,6 +11,7 @@
 * [Box Assembly](#box-assembly)
 * [Electrical Assembly](#electrical-assembly)
 * [Programming](#programming)
+* [Completed Controllers](#completed-controllers)
 * [Troubleshooting](#troubleshooting)
 * [Contact Me](#contact-me)
 
@@ -107,7 +108,7 @@ Official Sound Voltex Arcade machines do not have a universal weighting for the 
 | Button Size | Plunger Weight | AF* w/Spring | AF* w/Spring & 25g Switch | Minimum Switch AF* Required |
 |:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
 | 60mm Square   | 22g           | 290g          | 330g          | 100g          |
-| 45mm Rectangle| 7g            | 150g          | 180g          | 75g           |
+| 45mm Rectangle| 7g            | 150g          | 180g          | 100g           |
 | 33mm Square   | 3g            | 150g          | 170g          | 50g           |
 
 AF*: Actuation Force  
@@ -149,7 +150,7 @@ To prevent the side panels from angling inward and preventing the top plate from
 <hr/>
 
 # Electrical Assembly
-## Arcade Button Overview
+### Arcade Button Overview
 The arcade buttons consists of eight main parts, the housing, plunger, plate mount, fastener, LED lamp, lamp holder, return spring and limit switch. An layout of the different parts can be found below.
 
 <p align="center">
@@ -158,7 +159,7 @@ The arcade buttons consists of eight main parts, the housing, plunger, plate mou
   Overview of Arcade Button Components
 </p>
 
-## Arcade Button Return Spring Removal
+### Arcade Button Return Spring Removal
 If you are using a button configuration where the return spring must be removed, you will need to disassemble the arcade button. To disassemble the button, remove the limit switch and LED lamp from the button. Twist the lamp holder counter-clockwise to unlock and pull to remove. To remove the plunger, squeeze both plunger tabs inward and push the plunger out. Once the plunger is removed, you can replace or remove the return spring.
 
 <p align="center">
@@ -167,7 +168,7 @@ If you are using a button configuration where the return spring must be removed,
   Plunger Removal
 </p>
 
-## Switch & LED Lamp Wiring
+### Switch & LED Lamp Wiring
 Arcade buttons usually ship with a lamp holder, LED fixture and LED. The LED will either be white or the same color as the button cap. Most of the LED fixtures and LEDs that ship with the arcade buttons will have a resistor soldered to the LED in the fixture. This allows the LED to be driven directly off 12V without a resistor. Since we will be driving the LED directly off the output pin of an Arduino, the LED will be dimmer than intended. The LEDs chosen for the guide are a flat topped variety which offers the best illumination pattern within the square button and can be driven directly off the 5V output pin without an external resistor. The side of the lamp which has longer leads or more wire wrapped around the bottom post is the positive side of the LED.
 
 <p align="center">
@@ -264,7 +265,44 @@ These pin assignments can be adapted to the Arduino Leonardo or any other Keyboa
 
 # Programming
 ### Installation
+In order to load the firmware onto the Arduino Micro, you will need to install the Arduino IDE. If you already have the Arduino IDE installed, make sure it is the latest version as older versions handle libraries in sketch folders differently.
+
+[Download Windows Arduino IDE](https://www.arduino.cc/download_handler.php)
+
 ### Downloading the Code
+The firmware code can be found in my SDVX-DIY GitHub repository. There are two main development branches, master and standard. The standard branch is the branch used for this tutorial. The master branch has SK6812 based RGB LED backlighting which is not covered in this tutorial.
+
+[Standard Firmware](https://github.com/Reyn-Mukai/SDVX-DIY/tree/Standard)  
+[RGB Firmware](https://github.com/Reyn-Mukai/SDVX-DIY)
+
+To download the code, navigate to the appropriate branch and click the "Clone or download" dropdown and download as a zip file. To open the code, unzip the downloaded zip file and open the "SDVX-DIY.ino" file with the Arduino IDE.
+
+<p align="center">
+  <img src="/img/GitHub_Download.png" width="75%">
+  <br/>
+  Downloading The Code
+</p>
+
+### Uploading the Code
+Before you upload the code, there are several parameters within the code that can be modified in the event that different parts or wiring was used. View the GitHub readme on each branch's respective page for further information.
+
+To upload the code, you will first need to select the board type and COM port of your controller in the Arduino IDE. To select the board type, navigate to the "Tools" dropdown, expand the "Board:" option and select your Arduino board. If you are using a Pro Micro, select the Arduino Leonardo board. Next, on the "Tools" dropdown, expand the "Ports:" option and select your controller's COM port. Once these settings are set, click on the arrow on the top left of the screen to upload the program.
+
+<p align="center">
+  <img src="/img/Arduino_Board.png" width="75%">
+  <br/>
+  Selecting Arduino Board Type
+  <br/>
+  <br/>
+  <br/>
+  <img src="/img/Arduino_COM.png" width="75%">
+  <br/>
+  Selecting Arduino COM Port
+</p>
+
+<hr/>
+
+# Completed Controllers
 
 <hr/>
 
@@ -273,3 +311,4 @@ These pin assignments can be adapted to the Arduino Leonardo or any other Keyboa
 <hr/>
 
 # Contact Me
+If you have any questions regarding the guide or have any suggestions on how it may be improved, feel free to contact me at reyn.mukai@gmail.com
