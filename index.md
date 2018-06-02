@@ -1,5 +1,5 @@
 # A DIY SDVX/K-Shoot Mania Controller Guide
-#### Last Updated: 6/1/2018
+#### Last Updated: 6/2/2018
 
 # Table of Contents  
 
@@ -107,8 +107,8 @@ Official Sound Voltex Arcade machines do not have a universal weighting for the 
 
 | Button Size | Plunger Weight | AF* w/Spring | AF* w/Spring & 25g Switch | Minimum Switch AF* Required |
 |:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
-| 60mm Square   | 22g           | 290g          | 330g          | 100g          |
-| 45mm Rectangle| 7g            | 150g          | 180g          | 100g           |
+| 60mm Square   | 22g           | 290g          | 330g          | 150g          |
+| 45mm Rectangle| 7g            | 150g          | 180g          | 100g          |
 | 33mm Square   | 3g            | 150g          | 170g          | 50g           |
 
 AF*: Actuation Force  
@@ -292,9 +292,9 @@ To upload the code, you will first need to select the board type and COM port of
   <img src="/img/Arduino_Board.png" width="75%">
   <br/>
   Selecting Arduino Board Type
-  <br/>
-  <br/>
-  <br/>
+</p>
+
+<p align="center">
   <img src="/img/Arduino_COM.png" width="75%">
   <br/>
   Selecting Arduino COM Port
@@ -304,9 +304,12 @@ To upload the code, you will first need to select the board type and COM port of
 
 # Completed Controllers
 
+If you followed this guide and completed a controller, feel free to send it in for display.
+
 <hr/>
 
 # Troubleshooting
+Nothing here but chickens...
 
 <hr/>
 
