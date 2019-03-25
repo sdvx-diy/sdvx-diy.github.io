@@ -1,5 +1,5 @@
 # A DIY SDVX/K-Shoot Mania Controller Guide
-#### Last Updated: 6/2/2018
+#### Last Updated: 3/24/2019
 
 # Table of Contents  
 
@@ -121,7 +121,7 @@ For the box design, we will use a layout that was originally sourced from sdvx.p
 
 If you have access to a laser cutter, I have created design files for two types of boxes. The standard design uses 1/4" thick medium density fiberboard for the box and uses finger joints to maintain structural integrity. The other design has a clear acrylic sheet on the top and has a MDF plate underneath it which allows for underglow lighting. This tutorial will uses the standard design without LED lighting.
 
-* Standard Design (GitHub)
+* [Standard Design (GitHub)](https://github.com/Reyn-Mukai/SDVX-DIY/tree/Standard/Plate%20Design)
 * Underglow Design (GitHub)
 
 MDF was used as the main material for the standard design due to its strength, low cost and ease of painting. MDF however is a fairly dense wood and takes many passes with a laser cutter (8 passes in my case) and can be substituted for a different type of wood. Acrylic can also be substituted for MDF however, make sure you do not use polycarbonate as polycarbonate will create toxic gasses when laser cut.
@@ -309,7 +309,8 @@ If you followed this guide and completed a controller, feel free to send it in f
 <hr/>
 
 # Troubleshooting
-Nothing here but chickens...
+##### Error out of sync when programming the Arduino:
+If you're getting this message, make sure you COM ports and board type is correct. You may need to hit the reset button as you upload the program.
 
 <hr/>
 
